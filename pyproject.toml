@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "TestShoesCatalog"
+version = "0.1.0"
+description = "The project for test shoes catalog of web site."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.7"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^9.2.0"
+selenium = "^4.52.0"
+webdriver-manager = "^4.1.2"
+allure-pytest = "^2.16.2"
+ruff = "^0.17.3"
+mypy = "^2.4.1"
+faker = "^40.44.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
