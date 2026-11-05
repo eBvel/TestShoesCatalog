@@ -1,4 +1,2 @@
-
-
 class Settings:
-    TIMEOUT: float = 5
+	TIMEOUT: float = 5
