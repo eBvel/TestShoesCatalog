@@ -1,0 +1,24 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: mypy
+        name: type_hints
+        stages: [pre-commit]
+        language: system
+        types: [ python ]
+        pass_filenames: false
+        entry: mypy --config-file pyproject.toml .
+
+    -   id: ruff_linter
+        name: lint_fix
+        stages: [ pre-commit ]
+        language: system
+        types: [ python ]
+        entry: ruff check .
+
+    -   id: ruff_formatter
+        name: format
+        stages: [ pre-commit ]
+        language: system
+        types: [ python ]
+        entry: ruff format .
